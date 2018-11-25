@@ -1,0 +1,49 @@
+<?php
+session_start();
+session_destroy();
+
+?>
+<!DOCTYPE html>
+<html>
+ <head> <title> ELECTION MITTHULAL </title>
+  <style>
+ body {
+    background-image: url("poll1.jpg");
+ }
+ 
+ input[type=text] {
+    width: 27%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgb(120, 120, 120);
+    color: white;
+
+ }
+ input[type=password] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgb(120, 120, 120);
+    color: white;
+}
+</style>
+ 
+ </head>
+ <body> 
+      <h1 style="color:hsl(0, 100%, 50%);"> OLX LOGIN PAGE </h1>
+    <form action="pollchecklogin.php" method = "post">
+	<br>
+   
+	
+    1.USERID     :  <input type = "text" name = "userid" title = "enter userid" maxlength="50"><br><br>
+	2.PASSWORD:<input type='password' name='password' id='password' maxlength="50" ><br><br>
+	      <input type="submit" value="Submit"> <input type="reset">
+	</form>
+	
+ </body>
+ 
+</html>
